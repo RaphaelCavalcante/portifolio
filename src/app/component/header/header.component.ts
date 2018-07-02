@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { PageScrollService, PageScrollInstance, EasingLogic } from 'ngx-page-scroll';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private scrollService: PageScrollService, @Inject(DOCUMENT) private document:any) { }
+  
   ngOnInit() {
   }
-
+  public goToAbout() {
+    let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, '#about');
+    this.scrollService.start(pageScrollInstance);
+  }
 }
