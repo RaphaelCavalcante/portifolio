@@ -12,6 +12,7 @@ import { ServicesComponent } from './view/services/services.component';
 import { PortifolioComponent } from './view/portifolio/portifolio.component';
 import { ContactComponent } from './view/contact/contact.component';
 import { NavComponent } from './component/nav/nav.component';
+import { SkillComponent } from './component/skill/skill.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { NavComponent } from './component/nav/nav.component';
     ServicesComponent,
     PortifolioComponent,
     ContactComponent,
-    NavComponent
+    NavComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,

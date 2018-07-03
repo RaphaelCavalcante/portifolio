@@ -26,7 +26,9 @@
               "./node_modules/bootstrap/dist/css/bootstrap.css",
               "./node_modules/startbootstrap-creative/vendor/magnific-popup/magnific-popup.css",
               "./node_modules/startbootstrap-creative/vendor/font-awesome/css/font-awesome.css",
-              "./node_modules/startbootstrap-creative/css/creative.css"
+              "./node_modules/startbootstrap-creative/css/creative.css",
+              "./node_modules/devicon/devicon.css",
+              "./node_modules/devicon/devicon-colors.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.js",
